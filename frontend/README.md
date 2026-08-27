@@ -1,20 +1,16 @@
-# HOBUCO Frontend
+# React + Vite
 
-This folder contains the React/Vite frontend. The original HOBUCO CSS files and static images are retained under `public/` and are referenced by the React components in `src/`.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Install and run
+Currently, two official plugins are available:
 
-```bash
-npm install
-npm run dev
-```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-The Vite development server runs on port `5173` and proxies `/api` requests to the backend at `http://localhost:3001`.
+## React Compiler
 
-## Production build
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-```bash
-npm run build
-```
+## Expanding the Oxlint configuration
 
-The resulting `dist/` folder is served by the sibling backend when the backend is started in production mode.
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
